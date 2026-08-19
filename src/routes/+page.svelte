@@ -1,5 +1,7 @@
 <script>
-  let from = new URLSearchParams(window.location.search).get('from');
+  import { page } from '$app/stores';
+
+  let from = $derived(page.url.searchParams.get('from'));
 </script>
 
 {#if from}
