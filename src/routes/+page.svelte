@@ -12,5 +12,5 @@
 <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 
 {#if from}
-    <p> To go back click this link: <a href={from}>{from + "/?snooze=10"}</a></p>
+    <p> To go back click this link: <a href={from}>{from + "?snooze=10"}</a></p>
 {/if}
