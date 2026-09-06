@@ -8,9 +8,10 @@
   <p>You were redirected from: {from}</p>
 {/if}
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<h1>You've Been Redirected, Congrats!</h1>
+<p>Here's why I don't like youtube:</p>
 
-{#if from}
-    <button onclick={() => goto(from + "?snooze=10")}>Go Back</button>
-{/if}
+<!-- {#if from} -->
+    <p>Need to go back? Click the button below to return to {from}</p>
+    <button onclick={() => goto(from + "?snooze=10")} class="bg-blue-100 hover:bg-blue-200 cursor-pointer active:scale-95 active:bg-blue-300 p-2 rounded-lg hover:scale-105">Go Back</button>
+<!-- {/if} -->
