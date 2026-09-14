@@ -19,7 +19,7 @@
   }
 
   onMount(() => {
-    if (from && !dev) {
+    if (from) {
       setTimeout(makeActive, 10000)
     } else {
       isActive = true;
