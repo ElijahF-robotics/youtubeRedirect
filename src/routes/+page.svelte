@@ -27,7 +27,7 @@
   });
 </script>
 
-<div class="flex flex-col items-center justify-center bg-white p-4 rounded-lg max-w-1/3">
+<div class="flex flex-col items-center justify-center bg-white p-4 rounded-lg lg:max-w-1/3 md:max-w-1/2 max-w-6/7">
     {#if from}
       <p class="text-2xl">You've been Redirected!</p>
     {/if}
